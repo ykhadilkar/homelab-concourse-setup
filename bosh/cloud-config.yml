@@ -45,14 +45,14 @@ networks:
       name: VM Network
     dns:
     - 8.8.8.8
-    gateway: 192.168.7.1
-    range: 192.168.7.0/24
+    gateway: 10.0.0.1
+    range: 10.0.0.1/24
     reserved:
-    - 192.168.7.2 - 192.168.7.180
-    - 192.168.7.190 - 192.168.7.255
+    - 10.0.0.0 - 10.0.0.210
+    - 10.0.0.221 - 10.0.0.255
     static:
-    - 192.168.7.181 # concourse web
-    - 192.168.7.182 # concourse db
+    - 10.0.0.212 # concourse web
+    - 10.0.0.213 # concourse db
  
   type: manual
 
